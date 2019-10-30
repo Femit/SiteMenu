@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Лабараторная работа #1 - Forms</title>
+</head>
+<body>
+  <form>
+    <fieldset class="chooseFood">
+      <legend>Выбор заказываемого блюда</legend>
+      <p><label for="pizza">Пицца</label><input type="checkbox" name="pizza" id="pizza"></p>
+      <p><label for="hot-dog">Хот-дог</label><input type="checkbox" name="hot-dog" id="hot-dog"></p>
+      <p><label for="gamburger">Гамбургер</label><input type="checkbox" name="gamburger" id="gamburger"></p>
+      <p><label for="popcorn">Попкорн</label><input type="checkbox" name="pop-corn" id="popcorn"></p>
+      <p><label for="chupchups">Чупа-Чупс</label><input type="checkbox" name="chupchups" id="chupchups"></p>
+      <input type="submit" name="send" value="Отправить">
+      <input type="reset" name="clear" value="Очистить">
+    </fieldset>
+    <fieldset class="placeDeliver">
+      <legend>Указание места доставки</legend>
+        <p><label for="name">Имя: </label><input placeholder="Введите своё имя" type="text" id="name"></p>
+        <p><label for="lname">Фамилия: </label><input placeholder="Введите свою фамилию" type="text" id="lname"></p>
+        <p><label for="e-mail">E-mail: </label><input placeholder="Введите свой E-mail" type="email" id="e-mail">
+          <select name="domen" id="domen">
+            <option value="mail">@mail.ru</option>
+            <option value="ya">@ya.ru</option>
+            <option value="yandex">@yandex.ru</option>
+            <option value="bk">@bk.ru</option>
+          </select></p>
+        <p>
+          <label for="street">Улица: </label>
+          <select name="street" id="street">
+            <option value="lenina">пр. Ленина</option>
+            <option value="chekhova">ул. Чехова</option>
+            <option value="aeroflot">ул. Аэрофлотская</option>
+            <option value="energystr">ул. Энергетиков</option>
+          </select>
+        </p>
+        <p>
+          <label for="town">Улица: </label>
+          <select name="town" id="town">
+            <option value="surgut">Сургут</option>
+            <option value="vartovsk">Нижневартовск</option>
+            <option value="ugansk">Нефтеюганск</option>
+            <option value="liantor">Лянтор</option>
+          </select>
+        </p>
+          <input type="submit" name="send" value="Отправить">
+          <input type="reset" name="clear" value="Очистить">
+    </fieldset>
+    <fieldset class="choosePay">
+      <legend>Способ оплаты</legend>
+      <table>
+        <tr>
+          <td><input type="radio" name="pay" value="" id="nal"><label for="nal">Наличные</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="pay" value="" id="check"><label for="check">Чек</label></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="pay" value="" id="debitCard"><label for="debitCard">Дебитной картой</label></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Кредитной картой</p>
+            <ul class="chooseCard">
+              <li><input type="radio" name="pay" value="" id="visa"><label for="visa">Visa</label></li>
+              <li><input type="radio" name="pay" value="" id="mCard"><label for="mCard">Mater Card</label></li>
+              <li><input type="radio" name="pay" value="" id="discovery"><label for="discovery">Discovery</label></li>
+              <li><input type="radio" name="pay" value="" id="amerExpr"><label for="amerExpr">American Express</label></li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+      <input type="submit" name="send" value="Отправить">
+      <input type="reset" name="clear" value="Очистить">
+    </fieldset>
+  </form>
+</body>
+</html>

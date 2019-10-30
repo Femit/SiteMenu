@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(209, 255, 253);
+}
+
+.chooseFood p:nth-child(even) {
+  background-color: rgb(72, 146, 241);
+  width: 180px;
+}
+.chooseFood p {
+  margin: 3px 0 3px 0;
+}
+#pizza {
+  margin-left: 50px;
+}
+#hot-dog {
+  margin-left: 41px;
+}
+#gamburger {
+  margin-left: 24px;
+}
+#popcorn {
+  margin-left: 36px;
+}
+#chupchups {
+  margin-left: 22px;
+}
+#name {
+  margin-left: 43px;
+  width: 200px;
+}
+#lname {
+  margin-left: 10px;
+  width: 263px;
+}
+#e-mail {
+  margin-left: 29px;
+}
+#street {
+  margin-left: 30px;
+}
+#town {
+  margin-left: 30px;
+}
+.placeDeliver p {
+margin: 5px 0 5px 0;
+}
+.placeDeliver input {
+}
+.chooseCard {
+  list-style-type: none;
+}
